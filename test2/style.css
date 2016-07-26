@@ -19,11 +19,8 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
    
 
 
-
-
 /* Globals type styling */
-   
- h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
 	font-family:"Helvetica";
 }
 
@@ -64,32 +61,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 
 
-/* Group Styles */
-
-.bloc-group{
-	width:100%;
-	display:table;
-	table-layout: fixed;
-}
-.bloc-group .bloc{
-	position:relative;
-	display: table-cell;
-	vertical-align: top;
-}
-.bloc-tile-2{
-	width:50%;
-}
-.bloc-tile-3{
-	width:33.33333333%;
-}
-.bloc-tile-4{
-	width:25%;
-}
-.bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
-	width:100%;
-}
-
-
 /* Light theme */
 
 .l-bloc{
@@ -119,6 +90,15 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 .l-bloc .btn-wire, .l-bloc .btn-wire:hover{
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
+}
+
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
+.voffset-lg{
+	margin-top:80px;
 }
 
 /* Bloc text custom styling */
@@ -314,6 +294,11 @@ button{
 }
 .dropdown a .caret{
 	margin:0 0 0 5px}
+/* = Icons
+-------------------------------------------------------------- */
+.icon-sm{
+	font-size:18px!important;
+}
 
 
 
@@ -333,19 +318,6 @@ button{
 
 
 
-/* Empty space fillers - Used on empty blocs to fill them out */
-
-.empty-column,.empty-column.thin{
-	width:100%;
-	height:350px;
-	display:inline-block;
-}
-.empty-column{
-	height:350px;
-}
-.empty-column.thin{
-	height:150px;
-}
 /* iFrame */
 
 iframe{

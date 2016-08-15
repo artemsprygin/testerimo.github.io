@@ -1,0 +1,44 @@
+/* Helper Classes */
+
+/* Typography */
+.align-r {
+    text-align: right;
+}
+.align-c {
+    text-align: center
+}
+.align-l {
+    text-align: left;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+/* Display & Visibility */
+.hide {
+    display: none !important;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+.block {
+    display: block;
+}
+.invisible {
+    visibility: hidden;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-auto {
+    overflow: auto;
+}
+.overflow-visible {
+    overflow: visible;
+}
+/* Position */
+.fixed {
+    position: fixed;
+}

@@ -1,0 +1,392 @@
+
+@import 'helper-classes.css';
+
+/* 
+    ------------------------------
+             Grid System 
+    ------------------------------
+
+    Classes:
+        .container-1170
+        .container-970
+        .container-770
+        .col-1-1
+        .col-1-2
+        .col-1-3
+        .col-2-3
+        .col-1-4
+        .col-3-4
+        .col-5-12
+
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;        
+            box-sizing: border-box;
+}
+.container-1170, .container-970, .container-770 {
+    margin: 0 auto;
+}
+.container-1170 {
+    max-width: 1170px;
+}
+.container-970 {
+	max-width: 970px;
+}
+.container-770 {
+    max-width: 770px;
+}
+.col-1-1, .col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-3-4, .col-5-12 {
+    padding: 0 15px;
+}
+.col-1-1 {
+    width: 100%;
+}
+.col-1-2 {
+    width: 50%;
+}
+.col-1-3 {
+    width: 33.33%;
+}
+.col-2-3 {
+    width: 66.66%;
+}
+.col-1-4 {
+    width: 25%;
+}
+.col-3-4 {
+    width: 75%;
+}
+.col-5-12 {
+    width: 41.66%;
+}
+
+/* 
+    ------------------------------
+             Typography 
+    ------------------------------
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic';
+
+/*  
+    Open Sans   Latin, Cyrillic 
+    Light       300                     
+    Regular     400                     
+    Semibold    600                     
+    Bold        700                     
+*/
+
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+    font-weight: 400;
+	line-height: 1.6em;
+    color: #888;
+}
+h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+h2 {
+    font-size: 40px;
+    line-height: 1.4em;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+h1, h2 {
+    font-weight: 300;
+}
+h1, h2, h3, h4 {
+    color: #333;
+}
+h1, h2, h3, p {
+    margin-bottom: 30px;
+}
+
+/* 
+    ------------------------------
+                Colors 
+    ------------------------------
+
+    Classes:
+    Content
+        .light-color
+        .dark-color
+        .shade-color
+        .shade-light-color
+    Backgrounds
+        .light-bg
+        .dark-bg
+        .shade-bg
+        .gradient-bg
+
+*/
+
+/* Content */
+.light-color {
+    color: #fff;
+}
+.dark-color {
+    color: #333;
+}
+.shade-color {
+    color: #888;
+}
+.shade-light-color {
+    color: #dfe3e5;
+}
+/* Backgrounds */
+.light-bg {
+    background-color: #fff;
+}
+.dark-bg {
+    background-color: #333;
+}
+.shade-bg {
+    background-color: #f2f2f2;
+}
+.gradient-bg {
+    background: #032b59;
+    background: -moz-linear-gradient(top, #032b59 0%, #007ab8 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #032b59), color-stop(100%, #007ab8));
+    background: -webkit-linear-gradient(top, #032b59 0%, #007ab8 100%);
+    background: -o-linear-gradient(top, #032b59 0%, #007ab8 100%);
+    background: -ms-linear-gradient(top, #032b59 0%, #007ab8 100%);
+    background: linear-gradient(to bottom, #032b59 0%, #007ab8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032b59', endColorstr='#007ab8', GradientType=0 );
+}
+
+/* 
+    ------------------------------
+                Links 
+    ------------------------------
+*/
+
+a {
+    color: #007ab8;
+    text-decoration: none;
+}
+.no-touch a:hover {
+    color: #032b59;
+}
+p a {
+    border-bottom: 1px solid #bbb;
+}
+
+/* 
+    ------------------------------
+               Buttons 
+    ------------------------------
+
+    Classes:
+        .btn - Action Button
+        .btn .p0 - CTA Button
+        .btn .p1 - Light Action Button
+*/
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #bbbdbf;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 160px;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.no-touch .btn:hover {
+    color: #111;
+    border: 2px solid #888;
+}
+.p0 {
+    color: #fff;
+    background-color: #e38f2b;
+    border: 2px solid #e38f2b;
+}
+.no-touch .p0:hover {
+    color: #fff;
+    background-color: #f1890e;
+    border: 2px solid #f1890e;
+}
+.p1 {
+    color: #fff;
+}
+.no-touch .p1:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+/* 
+    ------------------------------
+             Input Forms 
+    ------------------------------
+
+    Classes:
+        .input-label
+        .input-textfield
+
+*/
+
+.input-label {
+	margin: 0 0 5px 3px;
+}
+.input-textfield {
+    height: 42px;
+    width: 100%;
+    max-width: 374px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #bbbdbf;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+/* 
+    ------------------------------
+             User Styles 
+    ------------------------------
+
+    Classes:
+        .header-bg
+        .dark-overlay
+        .header-nav
+        .logo
+        .primary-nav
+
+*/
+
+body {    
+    min-width: 320px;
+}
+section,
+footer {
+    padding: 40px 0;
+}
+
+.header-bg {
+/*  height: 100vh - calc in 'jquery.resize-header.js'	*/
+    min-height: 400px;
+    max-height: 1080px;
+    width: 100%;
+    background: url(../src/header-bg.jpg) no-repeat center bottom; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.dark-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.header-nav{
+    padding-top: 60px;
+}
+.logo {
+    float: left;
+}
+.primary-nav {
+    text-align: right; 
+}
+.primary-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ced5d9;
+    margin: 0 10px;
+}
+.no-touch .primary-nav a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+#advantages .col-1-2,
+#advantages-2 .col-1-3 {
+    vertical-align: top;
+    
+}
+#advantages h2 {
+    margin-bottom: 40px;
+}
+.adv-element {
+    background-size: 65px 65px;
+	background-repeat: no-repeat;
+	background-position: left 0 top 0;
+    margin-bottom: 50px;
+    min-height: 65px;
+}
+.adv-element h3 {
+    margin-bottom: 15px;
+}
+.adv-element h3,
+.adv-element p {
+    padding-left: 80px;
+}
+.truck {
+    background-image: url("../src/truck.png");
+}
+.individual {
+    background-image: url("../src/individual.png");
+}
+.quality {
+    background-image: url("../src/quality.png");
+}
+.pro {
+    background-image: url("../src/pro.png");
+}
+
+
+.guarant {
+    background-image: url("../src/guarant.png");
+}
+.time {
+    background-image: url("../src/time.png");
+}
+.done {
+    background-image: url("../src/done.png");
+}
+#advantages-2 .adv-element {
+    margin-bottom: 0;
+    background-position: left 0 top 50%;   
+}
+#advantages-2 p {
+    height: 70px;
+    margin-bottom: 0; 
+    display:table-cell; 
+    vertical-align:middle;
+}
+
+
+
+footer p {
+    margin-bottom: 0;
+}
+footer .col-1-2,
+footer .col-1-4 {
+    vertical-align: top;
+}

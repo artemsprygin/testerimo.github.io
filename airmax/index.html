@@ -11,6 +11,7 @@
         <title>Airmax - системы вентиляции</title>
         <link href="assets/css/reset.css" rel="stylesheet">
         <link href="assets/css/stylesheet.css" rel="stylesheet">
+        <link href="assets/css/media-queries.css" rel="stylesheet">
 
 
         <!--[if gte IE 9]
@@ -31,18 +32,18 @@
                             <div class="logo">Logo</div>
                             <nav class="primary-nav">
 	                            <a href="#advantages">Преимущества</a><!--
-                             --><a href="#">Услуги</a><!--
-                             --><a href="#">Проекты</a><!--
-                             --><a href="#">Контакты</a>
+                             --><a href="#services">Услуги</a><!--
+                             --><a href="#projects">Проекты</a><!--
+                             --><a href="#contact">Контакты</a>
                             </nav>
                         </div>
                         <div id='centered-div'>
-                        	<h1 class="light-color align-c">Свежий воздух - свежие мысли</h1>
-	                        <p class="light-color align-c" style="max-width: 600px; margin-left: auto; margin-right: auto;">Проектируем и устанавливаем системы вентиляции, отопления и кондиционирования в Кавказских Минеральных Водах.</p>
-                            <div class="col-1-2 inline-block align-r">
-                                <a class="btn p0" href="#">Оставить заявку</a>
+                        	<h1 class="light-color media-align">Свежий воздух - свежие мысли</h1>
+	                        <p class="light-color media-align" style="max-width: 600px; margin-left: auto; margin-right: auto;">Проектируем и устанавливаем системы вентиляции, отопления и кондиционирования в Кавказских Минеральных Водах.</p>
+                            <div class="col-1-2 inline-block">
+                                <a class="btn p0" href="#contact">Оставить заявку</a>
                             </div><!--
-                         --><div class="col-1-2 inline-block align-l">
+                         --><div class="col-1-2 inline-block">
                                 <a class="btn p1" href="#more">Подробнее</a>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
             <div class="container-970">
                 <div class="col-1-1">
                     <h2 class="align-c">Чистый воздух - отличное здоровье</h2>
-                    <p class="align-c">
+                    <p class="media-align">
                         Загрязненный воздух - это одна из причин появления болезней дыхательных путей и аллергии. Чтобы избежать подобных неприятностей, нужно регулярно очищать и ионизировать воздух. Мы предлагаем Вам системы вентиляции и кондиционирования помещений, благодаря которым эти проблемы останутся в прошлом.
                     </p>
                 </div>
@@ -89,19 +90,19 @@
         </section>
         <section id="advantages-2" class="shade-bg">
             <div class="container-970">
-                <div class="col-1-3 inline-block">
+                <div class="col-1-3 inline-block m-padding"">
                     <div class="adv-element guarant">
                         <p>Гарантия на наши работы составляет <span class="dark-color" style="font-size: 16px;font-weight: 600;">N</span> лет.</p>
                     </div>
                 </div><!--
-             --><div class="col-1-3 inline-block">
+             --><div class="col-1-3 inline-block m-padding">
                     <div class="adv-element time">
                         <p>Сроки не проблема. Выполняем все работы в указанное время.</p>
                     </div>
                 </div><!--
              --><div class="col-1-3 inline-block">
-                    <div class="adv-element done">
-                        <p>Нами выполнено уже больше <a href="#" style="font-size: 16px;">50 проектов</a>.</p>
+                    <div class="adv-element done m-padding"">
+                        <p>Нами выполнено уже больше <a href="#projects" style="font-size: 16px;">50 проектов</a>.</p>
                     </div>
                 </div>
             </div>
@@ -110,47 +111,53 @@
             <div class="container-970">
                 <div class="col-1-1">
                     <h2 class="align-c">Виды услуг</h2>
-                    <p class="align-c">
+                    <p class="media-align">
                         Наши инженеры и мастера способны выполнять проекты разных видов сложности - от небольших квартир до высокообъёмных производств.
                     </p>
                 </div>
                 <div class="col-1-3 inline-block">
-                    <div class="service home">
+                    <div id="block-l" class="service home">
                         <div class="dark-overlay">
-                            <div class="col-1-1">
-                                <h3 class="light-color" style="font-weight: 700; font-size: 24px;">Для дома</h3>
-                                <p>Создадим комфорт во всем доме благодаря чистому воздуху без запахов и примесей <br><br> /* список особенностей*/</p>
-                                <a class="btn p0 bottom-a" href="#">Оставить заявку</a>
+                            <div class="col-1-1 media-align">
+                                <div class="service-content">
+                                    <h3 class="light-color" style="font-weight: 700; font-size: 24px;">Для дома</h3>
+                                    <p>Создадим комфорт во всем доме благодаря чистому воздуху без запахов и примесей <br><br> /* список особенностей*/</p>
+                                </div>
+
+                                <a class="btn p0 bottom-a" href="#contact">Оставить заявку</a>
                             </div>
                         </div>
                     </div>
                 </div><!--
              --><div class="col-1-3 inline-block">
-                    <div class="service office">
+                    <div id="block-c" class="service office">
                         <div class="dark-overlay">
-                            <div class="col-1-1">
-                                <h3 class="light-color" style="font-weight: 700; font-size: 24px;">Для офиса и магазина</h3>
-                                <p>Эффективная и плодотворная работа всех сотрудников - результат хорошей вентиляции и ключ к высокой прибыли <br><br> /* список особенностей*/</p>
-                                <a class="btn p0 bottom-a" href="#">Оставить заявку</a>
+                            <div  class="col-1-1 media-align">
+                                <div class="service-content">
+                                    <h3 class="light-color" style="font-weight: 700; font-size: 24px;">Для офиса и магазина</h3>
+                                    <p>Эффективная и плодотворная работа всех сотрудников - результат хорошей вентиляции и ключ к высокой прибыли <br><br> /* список особенностей*/</p>
+                                </div>
+                                <a class="btn p0 bottom-a" href="#contact">Оставить заявку</a>
                             </div>
                         </div>
                     </div>
                 </div><!--
              --><div class="col-1-3 inline-block">
-                    <div class="service product">
+                    <div id="block-r" class="service product">
                         <div class="dark-overlay">
-                            <div class="col-1-1">
-                                <h3 class="light-color" style="font-weight: 700; font-size: 24px;">Для производства</h3>
-                                <p>Вариант 1: Удаление загрязняющих веществ из воздуха поможет рабочим оставаться здоровыми и готовыми к труду 
-                                   Вариант 2: Качество вашей продукции станет еще выше благодаря системам очистки и кондиционирования воздуха <br><br> /* список особенностей*/</p>
-                                <a class="btn p0 bottom-a" href="#">Оставить заявку</a>
+                            <div class="col-1-1 media-align">
+                                <div class="service-content">
+                                    <h3 class="light-color" style="font-weight: 700; font-size: 24px;">Для производства</h3>
+                                    <p>Вариант 1: Удаление загрязняющих веществ из воздуха поможет рабочим оставаться здоровыми и готовыми к труду 
+                                       Вариант 2: Качество вашей продукции станет еще выше благодаря системам очистки и кондиционирования воздуха <br><br> /* список особенностей*/</p>
+                                </div>
+                                <a class="btn p0 bottom-a" href="#contact">Оставить заявку</a>
                             </div>
                         </div>
                     </div>
                  </div>
             </div>
         </section>
-
         <section id="projects" class="gradient-bg" style="height: 600px;">
             <div class="container-970">
                 <div class="col-1-1">
@@ -158,7 +165,6 @@
                 </div>
             </div>
         </section>
-
         <section id="contact">
             <div class="container-970">
                 <div class="col-1-1">
@@ -176,7 +182,7 @@
                     -->
                     </div><!--
                 --><div class="col-5-12 inline-block">
-                        <div class="input-label">Ваше имя</div>
+                        <div class="input-label">Номер телефона или E-mail</div>
 
                         <input type="text" name="entry.642661909" value="" class="input-textfield" id="entry_642661909" dir="auto" aria-label="Email  электронный адрес введен неправильно" title="электронный адрес введен неправильно" aria-required="true" required="" placeholder="">
 
@@ -192,14 +198,13 @@
                 </form>
             </div>
         </section>
-
-
+        
         <footer class="dark-bg">
             <div class="container-970">
                 <div class="col-1-1">
                     <div class="shade-color" style="margin-bottom: 30px;">Logo</div>
                 </div>
-                <div class="col-1-2 inline-block">
+                <div class="col-1-2 inline-block no-mobile">
                     <p class="shade-light-color">
                         Мы реализуем весь комплекс работ по проектированию и строительству инженерной инфраструктуры  для строящихся объектов недвижимости, 
                         а также модернизацией инженерной инфраструктуры существующих объектов.
@@ -368,8 +373,9 @@
 
 
         <script src="assets/libs/jquery/jquery-3.1.0.min.js"></script>
-        <script src="assets/js/jquery.resize-header.js"></script>
         <script src="assets/js/jquery.center-div.js"></script>
+        <script src="assets/js/jquery.calcheight.js"></script>
         <script src="assets/js/hoverfix.js"></script>
+        
     </body>
 </html>

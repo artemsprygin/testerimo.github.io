@@ -1,0 +1,61 @@
+/* Desktop */
+.media-align {
+    text-align: center;
+}
+
+/* Tablets Portrait */
+@media screen and (max-width: 770px) {
+
+}
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    .primary-nav {
+        display: none;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .col-1-1, .col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-3-4, .col-5-12 {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .btn {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .media-align {
+        text-align:left;
+    }
+    .no-mobile {
+        display: none;
+    }
+    .m-padding {
+        padding-bottom: 20px;
+    }
+    .service-content {
+        height: 300px;
+    }
+
+    .input-label {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    #ss-submit {
+        margin-top: 20px;
+    }
+    .col-1-4 {
+        margin-bottom: 20px;
+    }
+}
+/* Back to 2007 */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}

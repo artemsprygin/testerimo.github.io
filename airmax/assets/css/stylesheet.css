@@ -88,15 +88,15 @@ body {
     color: #888;
 }
 h1 {
-    font-size: 60px;
+    font-size: 4em;
     line-height: 1.2em;
 }
 h2 {
-    font-size: 40px;
+    font-size: 3em;
     line-height: 1.4em;
 }
 h3 {
-    font-size: 22px;
+    font-size: 1.6em;
     font-weight: 400;
     line-height: 1.5em;
 }
@@ -265,6 +265,7 @@ p a {
     ------------------------------
 
     Classes:
+        #main-header
         .header-bg
         .dark-overlay
         .header-nav
@@ -280,10 +281,12 @@ section,
 footer {
     padding: 40px 0;
 }
-
+#main-header {
+    height: 100vh;
+}
 .header-bg {
 /*  height: 100vh - calc in 'jquery.resize-header.js'	*/
-    min-height: 400px;
+    min-height: 500px;
     max-height: 1080px;
     width: 100%;
     background: url(../src/header-bg.jpg) no-repeat center bottom; 
@@ -319,12 +322,6 @@ footer {
 .no-touch .primary-nav a:hover {
     color: #fff;
 }
-
-
-
-
-
-
 
 
 
@@ -404,13 +401,14 @@ footer .col-1-4 {
 
 .service .col-1-1 {
     padding: 60px 25px;
+    padding-bottom: 30px;
 }
 .service p {
     margin-top: 20px;
 }
 
 .service {
-    min-height: 490px;
+    min-height: 100px;
     color: #fff;
     text-align: center;
     margin-top: 30px;
@@ -433,12 +431,9 @@ footer .col-1-4 {
     background-image: url("../src/product.jpg");
 }
 
-.service .col-1-1 {
-    position: relative;
-    height: 490px;
+.service-content {
+    height: 400px;
 }
-.bottom-a {
-    position: absolute;
-    bottom: 40px;
-    left: 23%;
+.service .col-1-1 {
+    height: inherit;
 }

@@ -1,6 +1,9 @@
 $(function() {
-    centerDiv();
+    $(document).ready(centerDiv);
     $(window).resize(centerDiv);
+    window.addEventListener("orientationchange", function() {
+	    centerDiv();
+    }, false);
 });
 
 function centerDiv() {

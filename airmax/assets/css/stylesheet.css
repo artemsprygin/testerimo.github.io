@@ -249,7 +249,6 @@ p a {
 .input-textfield {
     height: 42px;
     width: 100%;
-    max-width: 374px;
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;

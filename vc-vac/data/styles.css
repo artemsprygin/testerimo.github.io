@@ -17,6 +17,9 @@
 }
 .button {
 }
+.link_button {
+  color:#169BD5;
+}
 .heading_1 {
   font-family:'Arial Обычный', 'Arial';
   font-weight:bold;
@@ -61,8 +64,22 @@
 }
 .line {
 }
+.text_field {
+  color:#000000;
+  text-align:left;
+}
+.text_area {
+  color:#000000;
+  text-align:left;
+}
 .droplist {
   color:#000000;
+  text-align:left;
+}
+.checkbox {
+  text-align:left;
+}
+.radio_button {
   text-align:left;
 }
 .flow_shape {
